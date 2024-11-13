@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px auto 100px; 
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+.header, .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 100px; 
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    padding: 20px;
+}
+
+.column {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
